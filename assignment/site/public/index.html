@@ -1,0 +1,208 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Cow Recorder</title> 
+  <meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes" /> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" /> 
+
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-startup-image" href="splash-320x460.png" /> 
+
+  <link rel="stylesheet" href="css/jquery.mobile.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure.css" />
+  <link rel="stylesheet" href="css/ios/style.css" />
+  <link rel="stylesheet" href="css/app.css" />
+
+  <script src="js/phonegap.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile.js"></script>
+  <script src="js/underscore.js"></script>
+  <script src="js/backbone.js"></script>
+  <script src="js/iscroll.js"></script>
+  <script src="js/app.js"></script>
+  
+  
+  
+</head> 
+<body> 
+
+<div id="main" data-role="page">
+<div id = "content"
+  <div id="headerApp" data-role="header">
+    <h1>Cow Record App</h1>
+	<!-- <a id="add" data-icon="plus" class="ui-btn-right">Add</a>-->
+  </div>
+
+  
+  
+  <div id="content_home" data-role="content scroller">
+  <div class="content-area">
+  
+    <h3>Login</h3>
+
+  
+    
+    <a href="/auth/twitter"  rel="external" data-role="button" data-iconpos="right" class="social_login 
+twitter_login">Twitter</a>
+    <a href="/auth/facebook" rel="external" data-role="button" data-iconpos="right" class="social_login 
+facebook_login">Facebook</a>
+<a id="social_msg_twitter"  data-role="button" data-iconpos="right" class="social_msg twitter_msg ui-corner-right ui-corner-left">tweet now</a>
+
+  
+  </div>
+</div>
+
+
+    <div id="content_cows" class="content scroller" >
+     <div id="header" data-role="header">
+    <h1>Cow List</h1>
+	 <a id="add" data-icon="plus" class="ui-btn-right">Add</a>
+  </div>
+      <div id = "cow" data-postion = 'content'class="content-area">
+        <h3></h3>
+         <div id="newitem" data-position="content">
+	 <Label>Tag No:</label><input type="text" id="newitemtext"/>
+         <Label>Breed:</label>
+	
+	<select id = "breed">
+               <option value="1">Friesian</option>
+               <option value="2">Holstein</option>
+               <option value="3">Jersey</option>
+               <option value="4">Montbéliarde</option>
+	       <option value="5">Dairy Shorthorn</option>
+	       <option value="6">Limousin</option>
+	       <option value="7">Charolais</option>
+	       <option value="8">White Head</option>
+             </select>
+      <label>In Calf:</label> <select id = "inCalf">
+		<option value="1">Yes</option>
+		<option value="2">No</option>
+		</select>
+      <label>Sire:</label><input type="text" id="siretext"/>
+      <label>Date of AI:</label><input type="date" id ="dateAI" name="dateAI" />
+      <label>Calfed:</label> <select id = "calfed">
+		<option value = "1">Yes</option>
+		<option value = "2">No</option>
+		</select>      
+      <a id="save" data-role="button" data-inline="true" data-icon='check'>Add</a>
+	  <a id="cancel" data-role="button" data-inline="true" data-icon='delete'>Cancel</a>
+    </div>
+    <ul id="list" data-role="listview">
+       <li id="{{-id}}" class="tm">
+       <div id="rm_{{-id}}" class='delete-item'>Delete</div>
+		<!--<span id="check_{{-id}}" class="check">&nbsp;</span> -->
+		Tag No: <span id="text_{{-id}}" class="text">{{-text}}</span> <br>
+		<!--Date of AI: <span id="dateOfAI_{{-id}}" class="dateOfAI">{{dateOfAI}}</span>-->
+		<a id = "cowdetail" href="#cowdetail?cow={{-id}}"></a>
+		
+		<!--<div id="rm_{{-id}}" class='View-Info'>Cow Info</div>-->
+		
+      </li>
+    </ul>
+      </div>
+    </div>
+   
+    
+       <div id="content_calfs" class="content scroller">
+           <div id="headerCalf" data-role="header">
+    <h1>Calf List</h1>
+	 <a id="addCalf" data-icon="plus" class="ui-btn-right">Add Calf</a>
+  </div>
+      
+          <div id="newCalf" data-position="content">
+	 <Label>Tag No:</label><input type="text" id="newTag"/>
+	 <Label>Mother Tag No:</label><input type="text" id="cowTag"/>
+         <Label>Breed:</label>
+	
+	<select id = "calfBreed">
+               <option value="1">Friesian</option>
+               <option value="2">Holstein</option>
+               <option value="3">Jersey</option>
+               <option value="4">Montbéliarde</option>
+	       <option value="5">Dairy Shorthorn</option>
+	       <option value="6">Limousin</option>
+	       <option value="7">Charolais</option>
+	       <option value="8">White Head</option>
+             </select>
+         <label>Sire:</label><input type="text" id="siret"/>
+      <label>Date of Birth:</label><input type="date" id ="birthDate" name="birthDate" />
+      <label>Gender:</label> <select id = "gender">
+		<option value = "1">Male</option>
+		<option value = "2">Female</option>
+		</select>      
+      <a id="saveCalf" data-role="button" data-inline="true" data-icon='check'>Add</a>
+	  <a id="cancelCalf" data-role="button" data-inline="true" data-icon='delete'>Cancel</a>
+    </div>
+    <ul id="listcalf" data-role="listview">
+       <li id="{{-id}}" class="tm">
+		<!--<span id="check_{{-id}}" class="check">&nbsp;</span> -->
+		Tag No: <span id="text_{{-id}}" class="text">{{-text}}</span> <br>
+		<!--Date of AI: <span id="dateOfAI_{{-id}}" class="dateOfAI">{{dateOfAI}}</span>-->
+		<!--<a id = "cowInfo" href="#cow_info"></a>-->
+		<div id="rm_{{-id}}" class='delete-calf'>Delete</div>
+		<!--<div id="rm_{{-id}}" class='View-Info'>Cow Info</div>-->
+		
+      </li>
+    </ul>
+      </div>
+    
+     
+
+   	 <div id="content_calfsSold" class="content scroller">
+           <div id="headerSoldCalf" data-role="header">
+    <h1>Calf Sold List</h1>
+	
+  </div>
+      
+          
+    <ul id="listSoldcalf" data-role="listview">
+       <li id="{{-id}}" class="tm">
+		<!--<span id="check_{{-id}}" class="check">&nbsp;</span> -->
+		Tag No: <span id="text_{{-id}}" class="text">{{-text}}</span> <br>
+		<!--Date of AI: <span id="dateOfAI_{{-id}}" class="dateOfAI">{{dateOfAI}}</span>-->
+		<!--<a id = "cowInfo" href="#cow_info"></a>-->
+		<div id="rm_{{-id}}" class='delete-calf'>Delete</div>
+		<!--<div id="rm_{{-id}}" class='View-Info'>Cow Info</div>-->
+		
+      </li>
+    </ul>
+      </div>
+      
+    
+
+
+  <div id="footer" data-role="footer" class="ui-bar custom-tabbar" data-position="fixed" data-fullscreen="true">
+    <div data-role="navbar" class="ui-navbar">
+      <ul id="tabbar" class="ui-grid custom-tabbar">
+        <li><a id="tab_home"    data-icon="custom">Home</a></li>
+        <li><a id="tab_cows"  data-icon="custom">Cows</a></li>
+        <li><a id="tab_calfs"   data-icon="custom">Calfs</a></li>
+        <li><a id="tab_calfsSold"  data-icon="custom">Calfs Sold</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<div id="cowdetail" data-role="page">
+           <div id="header" data-role="header">
+			<h1>Cow Detail</h1>
+			 <a href="#main" id="list" data-role="button" data-inline="true" >Back</a>
+			 <!-- this will need a need href for edit-->
+			  <a href="#main" id="list" data-role="button" data-inline="false" >Edit</a>
+			</div>
+			<div class="content-area">
+			<ul id="list" data-role="listview">
+			<li id="{{-id}}" class="tm">
+			 <span id="text_{{-id}}" class="text">{{-text}}</span>
+			  
+		    </li>
+		</ul>
+	 </div>
+  </div>
+
+</body>
+</html>

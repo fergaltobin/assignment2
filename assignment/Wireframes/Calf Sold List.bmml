@@ -1,0 +1,90 @@
+<mockup version="1.0" skin="sketch" measuredW="1096" measuredH="641" mockupW="998" mockupH="613">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="98" y="28" w="372" h="613" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bgPattern>topBlueBottom</bgPattern>
+        <bgTransparent>true</bgTransparent>
+        <orientation>portrait</orientation>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="233" y="157" w="108" h="20" measuredW="103" measuredH="21" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>Cow%20Record%20App</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::MenuBar" x="148" y="485" w="272" h="53" measuredW="244" measuredH="29" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>3</selectedIndex>
+        <text>Home%2C%20Cow%2C%20Calf%2C%20Calf%20Sold</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="248" y="207" w="71" h="22" measuredW="63" measuredH="21" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Calfs%20Sold</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::List" x="148" y="241" w="272" h="246" measuredW="100" measuredH="185" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <alternateRowColor>16777215</alternateRowColor>
+        <rowHeight>61</rowHeight>
+        <selectedIndex>-1</selectedIndex>
+        <text>Tag%20No%3A%20IE987653412%2C%20Male%2C%20Friesian%0ATag%20No%3A%20IE563478125%2C%20Female%2C%20White%20Head%0ATag%20No%3A%20IE906734254%2CFemale%2C%20White%20Head</text>
+        <value>0</value>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::HRule" x="148" y="234" w="272" h="-1" measuredW="100" measuredH="5" zOrder="5" locked="false" isInGroup="-1"/>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::HRule" x="148" y="298" w="252" h="-1" measuredW="100" measuredH="5" zOrder="6" locked="false" isInGroup="-1"/>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::HRule" x="148" y="362" w="252" h="-1" measuredW="100" measuredH="5" zOrder="7" locked="false" isInGroup="-1"/>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::HRule" x="148" y="433" w="252" h="-1" measuredW="100" measuredH="5" zOrder="8" locked="false" isInGroup="-1"/>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::iPhone" x="724" y="28" w="372" h="613" measuredW="282" measuredH="510" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bgPattern>topBlueBottom</bgPattern>
+        <bgTransparent>true</bgTransparent>
+        <orientation>portrait</orientation>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Label" x="859" y="157" w="108" h="20" measuredW="103" measuredH="21" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>Cow%20Record%20App</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::MenuBar" x="774" y="485" w="272" h="53" measuredW="244" measuredH="29" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>3</selectedIndex>
+        <text>Home%2C%20Cow%2C%20Calf%2C%20Calf%20Sold</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Label" x="874" y="207" w="70" h="22" measuredW="63" measuredH="21" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Calfs%20Sold</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::List" x="774" y="239" w="272" h="246" measuredW="100" measuredH="185" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <alternateRowColor>16777215</alternateRowColor>
+        <rowHeight>61</rowHeight>
+        <selectedIndex>-1</selectedIndex>
+        <text>Tag%20No%3A%20IE987653412%2C%20Male%2C%20Friesan%0ATag%20No%3A%20IE563478125%2C%20Female%2C%20White%20Head%0ATag%20No%3A%20IE906734254%2CFemale%2C%20White%20Head</text>
+        <value>0</value>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::HRule" x="774" y="433" w="252" h="-1" measuredW="100" measuredH="5" zOrder="14" locked="false" isInGroup="-1"/>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::HRule" x="774" y="303" w="252" h="-1" measuredW="100" measuredH="5" zOrder="15" locked="false" isInGroup="-1"/>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::HRule" x="774" y="360" w="252" h="-1" measuredW="100" measuredH="5" zOrder="16" locked="false" isInGroup="-1"/>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::HRule" x="774" y="234" w="272" h="-1" measuredW="100" measuredH="5" zOrder="17" locked="false" isInGroup="-1"/>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::PointyButton" x="959" y="256" w="-1" h="-1" measuredW="60" measuredH="27" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Delete</text>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::StickyNote" x="505" y="209" w="204" h="120" measuredW="109" measuredH="123" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Right%20swipe%20shows%20Delete%20button.%0ALeft%20swipe%20hides%20Delete%20button</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

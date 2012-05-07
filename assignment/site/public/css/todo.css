@@ -1,0 +1,62 @@
+.tm {
+    display: none;
+}
+
+#cancel {
+ display: none;
+  font-size: 6pt;
+}
+
+#newitem {
+  display: none;
+  height: 85px;
+  font-size: 8pt;
+}
+
+#save {
+  font-size: 6pt;
+}
+
+#text {
+  font-size: 8pt;
+}
+#newitemtext {
+  font-size: 8pt;
+}
+
+div[data-role='content'] {
+    overflow: hidden;
+    position: fixed;
+    top: 40px;
+    bottom: -60px;
+    left: 0px;
+    right: 0px;
+}
+
+div.delete-item {
+  display: none;
+  font-size: 8pt;
+  float: right;
+  border: 1px solid #900;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.18, rgb(173,0,0)),
+    color-stop(0.57, rgb(250,120,120))
+  );
+}
+
+
+span.check {
+  border: 2px solid #333; 
+  line-height: 18px; 
+  font-size: 18px;
+  width: 18px; 
+  height:18px;
+  display: inline-block;
+  margin-right: 5px;
+}

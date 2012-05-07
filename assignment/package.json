@@ -1,0 +1,25 @@
+{
+  "name": "cow app",
+  "description": "Cow Record App",
+  "keywords": ["MSD","WIT","Cow"],
+  "version": "0.0.1",
+  "homepage": "",
+  "author": "Fergal Tobin",
+  "contributors": [
+    ""
+  ],
+  "dependencies": {
+    "dispatch": "*",
+    "node-uuid": "*",
+    "connect": "1.8.6",
+    "request": "*",
+    "everyauth": "",
+    "node-oauth": "*",
+    "twitter": "*",
+    "facebook-client": "*",
+    "data-capsule":"git://github.com/rjrodger/data-capsule.git"
+  },
+  "engines": {
+    "node": ">=0.4"
+  }
+}
